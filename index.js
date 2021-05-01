@@ -15,8 +15,8 @@ var date = new Date(Date.now())
 
 app.get('/', (req, res) => {
     res.send({monitoramento: date.toLocaleString('pt-BR'), quantidade: quantidade, dados: dados});
-    // dados = []
-    // quantidade = 0
+    dados = []
+    quantidade = 0
 });
 app.post('/', async (req, res) => {
     try {    
